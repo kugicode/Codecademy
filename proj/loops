@@ -1,0 +1,23 @@
+let input = "Anas";
+const vowels = ["a", "e", "i", "o", "u"];
+
+let resultArray = [];
+
+for (let i = 0; i<input.length; i++){
+  // console.log(input[i]);
+if (input[i] === "e"){
+  resultArray.push(input[i])
+}
+if(input[i] === "u"){
+  resultArray.push(input[i]);
+}
+
+  for(let a = 0; a<vowels.length; a++){
+    // console.log(a);
+    if (input[i] === vowels[a]){
+      // console.log(input[i]);
+      resultArray.push(input[i]);
+   }
+ }
+}
+console.log(resultArray.join(" ").toUpperCase());
